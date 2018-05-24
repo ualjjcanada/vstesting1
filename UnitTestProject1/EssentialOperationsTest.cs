@@ -51,6 +51,22 @@ namespace CalculatorNS.Tests
         }
 
         [TestMethod()]
+        public void testMax1()
+        {
+            var Calculator = new Calculator();
+            var result = Calculator.max(2, 4);
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod()]
+        public void testMin1()
+        {
+            var Calculator = new Calculator();
+            var result = Calculator.min(2, 4);
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod()]
         public void methodWihoutFullCoverageTest()
         {
             var Calculator = new Calculator();
